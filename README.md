@@ -11,5 +11,5 @@
 
 # Viewing examples
 - navigate to project root folder
-- launch web server, e.g. `python -m http.server`
+- launch web server, e.g. `python3 -m http.server`
 - navigate to `http://<web server url>/examples/<example_name>.html`
