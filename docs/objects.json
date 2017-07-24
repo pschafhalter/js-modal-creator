@@ -1,0 +1,22 @@
+[
+  {
+    "name": "my-checkbox-name",
+    "type": "checkbox",
+    "label": "this is a label.",
+    "checked": false
+  },
+  {
+    "name": "my-radio-name",
+    "type": "radio",
+    "buttons": [
+      {
+        "label": "My first radio button",
+        "value": "this value if selected"
+      },
+      {
+        "label": "My second radio button",
+        "value": "this different value if selected"
+      }
+    ]
+  }
+]

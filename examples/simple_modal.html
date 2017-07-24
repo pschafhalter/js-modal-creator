@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Modal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#my_modal">
+    <span class="glyphicon glyphicon-flash"></span> Open modal
+</button>
+</body>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="/source/includes/jquery-bootstrap-modal-steps.js"></script>
+<script src="/source/create_modal.js"></script>
+<script src="/examples/simple_modal.js"></script>
+<script type="text/javascript">
+    create_modal($, "my_modal", modal, function(result) {
+      var result_array = ["Result:"];
+      for (key in result) {
+        result_array.push(key + ": " + result[key].toString());
+      }
+      var result_str = result_array.join("\n");
+      alert(result_str);
+    });
+</script>
+</html>
