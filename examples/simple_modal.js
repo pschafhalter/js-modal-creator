@@ -46,7 +46,7 @@ var modal = [
         "name": "text-input",
         "type": "text-input",
         "text_input_type": "email",
-        "description": "This is a discription",
+        "description": "This is a description",
         "placeholder": "This is a placeholder"
       }
     ]
