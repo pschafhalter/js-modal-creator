@@ -38,5 +38,17 @@ var modal = [
         ]
       }
     ]
+  },
+  {
+    "title": "Text inputs",
+    "objects": [
+      {
+        "name": "text-input",
+        "type": "text-input",
+        "text_input_type": "email",
+        "description": "This is a discription",
+        "placeholder": "This is a placeholder"
+      }
+    ]
   }
 ];

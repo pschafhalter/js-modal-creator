@@ -77,10 +77,20 @@ function create_element($, obj, getters) {
         label.prepend(button);
         wrapper.append(label);
         element.append(wrapper);
-        // Add getter to getters
-        var getter = function() { return $("input[name=" + obj.name + "]:checked").val(); };
-        getters[obj.name] = getter;
       }
+      // Add getter to getters
+      var getter = function() { return $("input[name=" + obj.name + "]:checked").val(); };
+      getters[obj.name] = getter;
+      break;
+    case "text-input":
+      element = $("<div/>", {"class": "form-group"});
+      var label = $("<label/>", {"for": obj.name, "text": obj.description});
+      var text_input = $("<input/>", {"type": obj.text_input_type, "class": "form-control", "id": obj.name, "placeholder": obj.placeholder});
+      element.append(label);
+      element.append(text_input);
+      // Add getter to getters
+      var getter = function() { return $("#" + obj.name).val(); };
+      getters[obj.name] = getter;
       break;
     default:
       break;
