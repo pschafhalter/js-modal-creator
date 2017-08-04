@@ -1,5 +1,14 @@
 var modal = [
   {
+    "title": "Custom HTML",
+    "objects": [
+      {
+        "type": "html",
+        "html": "<h1>Hello, world!</h1><p>This is <i>custom</i> HTML.</p>"
+      }
+    ]
+  },
+  {
     "title": "Checkboxes",
     "objects": [
       {

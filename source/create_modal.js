@@ -68,6 +68,9 @@ function create_element($, obj, getters) {
       var getter = function() { return $("#" + obj.name).is(":checked"); };
       getters[obj.name] = getter;
       break;
+    case "html":
+      element = $(obj.html);
+      break;
     case "radio":
       element = $("<div/>");
       for (var i = 0; i < obj.buttons.length; i++) {
