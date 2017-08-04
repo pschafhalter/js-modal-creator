@@ -82,6 +82,9 @@ function create_element($, obj, getters) {
       var getter = function() { return $("input[name=" + obj.name + "]:checked").val(); };
       getters[obj.name] = getter;
       break;
+    case "text":
+      element = $("<p/>", {"text": obj.text, "id": obj.name});
+      break;
     case "text-input":
       element = $("<div/>", {"class": "form-group"});
       var label = $("<label/>", {"for": obj.name, "text": obj.description});
